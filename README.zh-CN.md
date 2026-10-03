@@ -2,7 +2,7 @@
 
 第六届计图人工智能挑战赛赛道二的个人参赛作品，基于 [Jittor（计图）](https://github.com/Jittor/jittor) 实现：复现 **StraightPCF**（CVPR 2024）做点云去噪，热身赛用 **PCT** 做三维形状分类。
 
-**技术报告：[`report/tech_report.pdf`](report/tech_report.pdf)** —— 方法、结果，以及哪些没做成。([LaTeX 源码](report/tech_report.tex) · [English README](README.md))
+**技术报告：[`report/tech_report.pdf`](report/tech_report.pdf)** —— 方法、结果，以及哪些没做成。([LaTeX 源码](report/tech_report.tex) · [English README](README.md) · [同样附在 v1.0 release 上](../../releases/tag/v1.0))
 
 ## 结果
 
