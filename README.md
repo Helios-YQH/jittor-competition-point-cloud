@@ -2,7 +2,7 @@
 
 A solo entry to the 6th Jittor AI Challenge, implemented in [Jittor](https://github.com/Jittor/jittor): a reproduction of **StraightPCF** (CVPR 2024) for point-cloud denoising, and a **PCT** classifier for the qualification round.
 
-**Technical report: [`report/tech_report.pdf`](report/tech_report.pdf)** — the method, the results, and what did not work. ([LaTeX source](report/tech_report.tex) · [中文说明](README.zh-CN.md) · [also attached to the v1.0 release](../../releases/tag/v1.0))
+**Technical report: [`report/tech_report.pdf`](report/tech_report.pdf)** — the method, the results, and what did not work. ([LaTeX source](report/tech_report.tex) · [中文说明](README.zh-CN.md) · [v1.0 release](https://github.com/Helios-YQH/jittor-competition-point-cloud/releases/tag/v1.0))
 
 ## Results
 
