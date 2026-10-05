@@ -1,6 +1,6 @@
 # Jittor AI Challenge, Track 2 — Point-Cloud Denoising & Classification
 
-A solo entry to the 6th Jittor AI Challenge, implemented in [Jittor](https://github.com/Jittor/jittor): a reproduction of **StraightPCF** (CVPR 2024) for point-cloud denoising, and a **PCT** classifier for the qualification round.
+A solo entry to the 6th Jittor AI Challenge (3,668 registrations), implemented in [Jittor](https://github.com/Jittor/jittor): a reproduction of **StraightPCF** (CVPR 2024) for point-cloud denoising, and a **PCT** classifier for the qualification round.
 
 **Technical report: [`report/tech_report.pdf`](report/tech_report.pdf)** — the method, the results, and what did not work. ([LaTeX source](report/tech_report.tex) · [中文说明](README.zh-CN.md) · [v1.0 release](https://github.com/Helios-YQH/jittor-competition-point-cloud/releases/tag/v1.0))
 
@@ -8,7 +8,7 @@ A solo entry to the 6th Jittor AI Challenge, implemented in [Jittor](https://git
 
 | Task | Model | Result |
 |---|---|---|
-| Point-cloud denoising | StraightPCF reproduction: two velocity modules, ≈0.47M parameters | **67.44/100** by the competition formula on a nine-mesh held-out split (CD sub-score 51.9, P2S sub-score 82.9); national top 100 |
+| Point-cloud denoising | StraightPCF reproduction: two velocity modules, ≈0.47M parameters | **67.44/100** by the competition formula on a nine-mesh held-out split (CD sub-score 51.9, P2S sub-score 82.9); national top 100 of 3,668 registrations |
 | Shape classification | PCT: 2 sample-and-group stages and 4 offset-attention blocks, ≈2.9M parameters | 12th in the warmup round; the round's pass mark was 80% test accuracy |
 
 Pooled over the held-out samples, denoising cuts the Chamfer distance by 51% and the point-to-surface error by 67% against the noisy input. The paper reports higher accuracy on its own Gaussian-noise benchmarks, which are not comparable to this competition's Laplace noise; the report's post-mortem traces the points lost in the July rewrite chiefly to the switch in noise model.

@@ -1,6 +1,6 @@
 # 计图挑战赛赛道二 — 点云去噪与点云分类
 
-第六届计图人工智能挑战赛赛道二的个人参赛作品，基于 [Jittor（计图）](https://github.com/Jittor/jittor) 实现：复现 **StraightPCF**（CVPR 2024）做点云去噪，热身赛用 **PCT** 做三维形状分类。
+第六届计图人工智能挑战赛（3,668 报名）赛道二的个人参赛作品，基于 [Jittor（计图）](https://github.com/Jittor/jittor) 实现：复现 **StraightPCF**（CVPR 2024）做点云去噪，热身赛用 **PCT** 做三维形状分类。
 
 **技术报告：[`report/tech_report.pdf`](report/tech_report.pdf)** —— 方法、结果，以及哪些没做成。([LaTeX 源码](report/tech_report.tex) · [English README](README.md) · [v1.0 release](https://github.com/Helios-YQH/jittor-competition-point-cloud/releases/tag/v1.0))
 
@@ -8,7 +8,7 @@
 
 | 赛题 | 模型 | 结果 |
 |---|---|---|
-| 点云去噪 | StraightPCF 复现：两个速度模块，约 0.47M 参数 | 9 个网格留出集上自评 **67.44/100**（竞赛口径，CD 子分 51.9，P2S 子分 82.9）；全国前 100 |
+| 点云去噪 | StraightPCF 复现：两个速度模块，约 0.47M 参数 | 9 个网格留出集上自评 **67.44/100**（竞赛口径，CD 子分 51.9，P2S 子分 82.9）；全国前 100 / 3,668 报名 |
 | 三维形状分类 | PCT：2 个采样分组模块 + 4 层 Offset-Attention，约 2.9M 参数 | 热身赛第 12 名，该轮通过线为测试集准确率 ≥ 80% |
 
 留出集整体统计：去噪后相对含噪输入的 Chamfer 距离下降 51%、点到面误差下降 67%。论文报告的精度来自它自己的高斯噪声数据集，与本次比赛使用的 Laplace 噪声不可直接比较；报告认为七月重构中掉的分主要来自噪声模型的改变。
